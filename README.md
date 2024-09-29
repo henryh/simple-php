@@ -1,18 +1,18 @@
 # Simple PHP server in Docker
 
-The simple php server in Docker with Composer.
+The simple PHP server in Docker with Composer.
 It's a basic server for static files or PHP projects. You can use it for testing or development purposes. The server is based on the official PHP image. You can add your files to the `app` directory or create a symbolic link to your project directory.
 Entrypoint is a `public` dir with the `index.php` file.
 
-To work with the server, you only need [Docker](https://docs.docker.com/get-started/get-docker/) installed.
+To work with the server, you need [Docker](https://docs.docker.com/get-started/get-docker/) installed.
 
 ### Commands
 
 - `make install` - initial setup
 - `make up` - start server
 - `make down` - stop server
-- `make restart` - reboot server with new config or files link
-- `make watch` - start the server and show the realtime logs
+- `make restart` - reboot server with new config or a files link
+- `make watch` - start the server and show realtime logs
 - `make exec` - go to the server console
 - `make logs` - view server logs
 
