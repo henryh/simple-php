@@ -11,12 +11,14 @@ up: ## Start the server
 
 down: ## Stop the server
 	docker stop $(SERVER) && docker rm -f $(SERVER)
-	docker rmi -f image
-	docker system prune -af >/dev/null
 
 restart: ## Restart the server
 	@make stop
 	@make start
+	
+clean: ## Clean all
+	docker rmi -f image
+	docker system prune -af >/dev/null
 
 watch: ## Start the server and show the realtime logs
 	@make up
